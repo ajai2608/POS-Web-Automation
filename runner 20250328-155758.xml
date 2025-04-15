@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runner" project="POS" tests="55" started="55" failures="2" errors="1" ignored="0">
+  <testsuite name="runner.runner" time="2635.848">
+    <testsuite name="Launch URL and Login with Credentials with PIN" time="15.823">
+      <testcase name="Open Chrome Browser" classname="Launch URL and Login with Credentials with PIN" time="5.506"/>
+      <testcase name="Login with valid Credentials" classname="Launch URL and Login with Credentials with PIN" time="10.317"/>
+    </testsuite>
+    <testsuite name="Create Dine In Order" time="250.811">
+      <testcase name="Create Order and complete Dine In Order" classname="Create Dine In Order" time="29.091"/>
+      <testcase name="Create Order and Settle Dine In Bill and Change Payment option cash to others" classname="Create Dine In Order" time="43.031"/>
+      <testcase name="Create Order and Settle Bill Dine In" classname="Create Dine In Order" time="29.158"/>
+      <testcase name="Create order and Void it" classname="Create Dine In Order" time="20.318"/>
+      <testcase name="Create Order and complete Dine In Order" classname="Create Dine In Order" time="35.495"/>
+      <testcase name="Create Order and Add Item" classname="Create Dine In Order" time="17.592"/>
+      <testcase name="Change DineIn Table" classname="Create Dine In Order" time="10.53"/>
+      <testcase name="Create Order and Settle Bill Dine In" classname="Create Dine In Order" time="34.837"/>
+      <testcase name="Create Order and Delete Unpaid DineIn Order" classname="Create Dine In Order" time="30.757"/>
+    </testsuite>
+    <testsuite name="Create TakeAway Orders" time="116.327">
+      <testcase name="Create TakeAway Order" classname="Create TakeAway Orders" time="83.133"/>
+      <testcase name="Revert TakeAway Order from past Orders tab" classname="Create TakeAway Orders" time="33.192"/>
+    </testsuite>
+    <testsuite name="Grab Delivery Type Order" time="137.854">
+      <testcase name="User want to create GrabDelivery Order" classname="Grab Delivery Type Order" time="63.361"/>
+      <testcase name="User want to create GrabDelivery Order" classname="Grab Delivery Type Order" time="74.492"/>
+    </testsuite>
+    <testsuite name="Create Other Orders" time="82.591">
+      <testcase name="Create Other Orders" classname="Create Other Orders" time="82.591"/>
+    </testsuite>
+    <testsuite name="Past Revert Order" time="112.61">
+      <testcase name="past revert order" classname="Past Revert Order" time="112.609"/>
+    </testsuite>
+    <testsuite name="Apply Discount" time="267.64">
+      <testcase name="Cash Discount - Select 5 RM Discount" classname="Apply Discount" time="107.383"/>
+      <testcase name="Cash Discount- Send 1 RM Discount and select reason as celebration" classname="Apply Discount" time="52.194"/>
+      <testcase name="Percentage Discount Send 3%  Discount and select reason as celebration" classname="Apply Discount" time="52.721"/>
+      <testcase name="Percentage Discount- Select 5%  Discount and select reason as celebration" classname="Apply Discount" time="55.341"/>
+    </testsuite>
+    <testsuite name="Merge Bill" time="178.846">
+      <testcase name="Open Chrome Browser" classname="Merge Bill" time="4.665"/>
+      <testcase name="Login with valid Credentials" classname="Merge Bill" time="1.672">
+        <failure>
+          <expected/>
+          <actual>Login successful</actual>
+          org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Login successful]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at WebBase.WebBase.toastmessage(WebBase.java:266)
+	at pageElements.LoginPage.login_successfully(LoginPage.java:59)
+	at stepDefination.Login.message_displayed_login_successfully(Login.java:122)
+	at ✽.Message displayed Login Successfully(file:///Users/dilip/Desktop/Web_automation/POS/Features/CompleteMergeBillOrder.feature:12)
+
+
+        </failure>
+      </testcase>
+      <testcase name="Complete Merge Bill Order" classname="Merge Bill" time="172.507"/>
+    </testsuite>
+    <testsuite name="Add/Edit Customer Information" time="263.967">
+      <testcase name="Open Chrome Browser" classname="Add/Edit Customer Information" time="6.545"/>
+      <testcase name="Login with valid Credentials" classname="Add/Edit Customer Information" time="3.825"/>
+      <testcase name="Save Customer Info when creating GrabPickUp Order" classname="Add/Edit Customer Information" time="24.35"/>
+      <testcase name="Save Info when creating GrabDelivery Order" classname="Add/Edit Customer Information" time="24.463"/>
+      <testcase name="Enter Mobile Number then Save while creating DineIn order" classname="Add/Edit Customer Information" time="15.62"/>
+      <testcase name="Save Info when creating GrabDelivery Order" classname="Add/Edit Customer Information" time="34.601"/>
+      <testcase name="Save Customer Info when creating GrabDelivery Order" classname="Add/Edit Customer Information" time="91.781"/>
+      <testcase name="Save Customer Info when creating Take Away order" classname="Add/Edit Customer Information" time="31.477"/>
+      <testcase name="Save Customer Info when creating Take Away order" classname="Add/Edit Customer Information" time="31.301"/>
+    </testsuite>
+    <testsuite name="Delete Past Order" time="36.5">
+      <testcase name="Delete Order From Past OrderDashboard" classname="Delete Past Order" time="36.5"/>
+    </testsuite>
+    <testsuite name="Delete Order From Running Order Dashboard" time="17.835">
+      <testcase name="Delete Order From Running OrderDashboard" classname="Delete Order From Running Order Dashboard" time="17.835"/>
+    </testsuite>
+    <testsuite name="DineInOrder with multiple categories and Items" time="9.068">
+      <testcase name="Dine In Order with muplitple categories items" classname="DineInOrder with multiple categories and Items" time="9.068">
+        <error>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div _ngcontent-evt-c185="" class="menu-section ng-star-inserted"&gt;...&lt;/div&gt; is not clickable at point (298, 318). Other element would receive the click: &lt;div _ngcontent-evt-c196="" formarrayname="variants" class="selectives ng-untouched ng-pristine ng-valid ng-star-inserted" style=""&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.166)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Dilips-MacBook-Pro.local', ip: 'fe80:0:0:0:892:4ee6:61b6:ea63%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/rx/s2vh0ck15k1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51646}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dcf3ec1435e941799356e0d257a874b5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pageElements.DineInOrderwithmultiplecategoriesandItems.clickOnItemNames(DineInOrderwithmultiplecategoriesandItems.java:49)
+	at stepDefination.Login.click_on_Item_Categories(Login.java:326)
+	at ✽.Click on Item Categories(file:///Users/dilip/Desktop/Web_automation/POS/Features/DineInOrderwithmultiplecategoriesandItems.feature:39)
+
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="OtherOption Order" time="91.533">
+      <testcase name="Create Other Orders" classname="OtherOption Order" time="91.533"/>
+    </testsuite>
+    <testsuite name="POS All Printing Events" time="497.613">
+      <testcase name="POS Print Past Order" classname="POS All Printing Events" time="45.939"/>
+      <testcase name="Print Create Order and Add Item" classname="POS All Printing Events" time="105.126"/>
+      <testcase name="Print Merge Bill" classname="POS All Printing Events" time="135.118"/>
+      <testcase name="Print Merge Bill" classname="POS All Printing Events" time="134.448"/>
+      <testcase name="POS Print Running Order" classname="POS All Printing Events" time="76.981"/>
+    </testsuite>
+    <testsuite name="Send Email" time="139.911">
+      <testcase name="Send Email" classname="Send Email" time="139.911"/>
+    </testsuite>
+    <testsuite name="Split Bill" time="181.497">
+      <testcase name="Split Bill" classname="Split Bill" time="181.497"/>
+    </testsuite>
+    <testsuite name="Cash Drawer Open Cashier" time="24.151">
+      <testcase name="Open Chrome Browser" classname="Cash Drawer Open Cashier" time="3.291"/>
+      <testcase name="Login with valid Credentials" classname="Cash Drawer Open Cashier" time="4.087"/>
+      <testcase name="Cash Drawer Open Cashier" classname="Cash Drawer Open Cashier" time="16.773"/>
+    </testsuite>
+    <testsuite name="Cash Drawer Cash In" time="43.723">
+      <testcase name="Open Chrome Browser" classname="Cash Drawer Cash In" time="3.719"/>
+      <testcase name="Login with valid Credentials" classname="Cash Drawer Cash In" time="3.794"/>
+      <testcase name="Cash Drawer Cash In" classname="Cash Drawer Cash In" time="36.21"/>
+    </testsuite>
+    <testsuite name="Cash Drawer Cash Out" time="38.181">
+      <testcase name="Cash Drawer Cash Out" classname="Cash Drawer Cash Out" time="38.181"/>
+    </testsuite>
+    <testsuite name="Cash Drawer Kick" time="50.891">
+      <testcase name="Open Chrome Browser" classname="Cash Drawer Kick" time="3.626"/>
+      <testcase name="Login with valid Credentials" classname="Cash Drawer Kick" time="1.851">
+        <failure>
+          <expected/>
+          <actual>Login successful</actual>
+          org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Login successful]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at WebBase.WebBase.toastmessage(WebBase.java:266)
+	at pageElements.LoginPage.login_successfully(LoginPage.java:59)
+	at stepDefination.Login.message_displayed_login_successfully(Login.java:122)
+	at ✽.Message displayed Login Successfully(file:///Users/dilip/Desktop/Web_automation/POS/Features/z3CashDrawerKick.feature:12)
+
+
+        </failure>
+      </testcase>
+      <testcase name="Cash Drawer Kick" classname="Cash Drawer Kick" time="45.414"/>
+    </testsuite>
+    <testsuite name="Cash Drawer Close Cashier" time="78.471">
+      <testcase name="Cash Drawer Close Cashier" classname="Cash Drawer Close Cashier" time="78.471"/>
+    </testsuite>
+  </testsuite>
+</testrun>
